@@ -27,6 +27,7 @@ No* inserir_elemento_fim(No* Lista, int dado){
         novo_no->prox=NULL;
         aux->prox=novo_no;
     }
+    return Lista;
 }
 void imprimir_lista(No* Lista){
     No *aux =Lista;
