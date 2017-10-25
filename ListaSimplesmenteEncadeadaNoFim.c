@@ -13,19 +13,19 @@ No* criar_no(){
     return no;
 }
 No* inserir_elemento_fim(No* Lista, int dado){
-    No *novono=criar_no();
-    novono->num =dado;
+    No *novo_no=criar_no();
+    novo_no->num =dado;
 
     if(Lista==NULL){
-        novono->prox=NULL;
-        Lista=novono;
+        novo_no->prox=NULL;
+        Lista=novo_no;
     }else{
         No* aux=Lista;
         while(aux->prox!=NULL){
             aux=aux->prox;
         }
-        novono->prox=NULL;
-        aux->prox=novono;
+        novo_no->prox=NULL;
+        aux->prox=novo_no;
     }
 }
 void imprimir_lista(No* Lista){
